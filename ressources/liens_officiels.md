@@ -5,8 +5,6 @@ Dernière vérification : 2026-06-10
   - État : ✅ vérifié le 2026-06-10
 - **Mermaid — flowchart** : https://mermaid.js.org/syntax/flowchart.html
   - État : ✅ vérifié le 2026-06-10
-- **Marp** : https://marp.app/
-  - État : ✅ vérifié le 2026-06-10
 ## Tarifs (ordres de grandeur, pour l'arbitrage SLM/LLM)
 - **OpenAI pricing** : https://openai.com/api/pricing/
 - **Mistral pricing** : https://mistral.ai/products/la-plateforme

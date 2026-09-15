@@ -20,19 +20,18 @@
 | Étape | À produire | Fichier |
 |---|---|---|
 | 1 | Converger depuis vos 2 cadrages | `decisions_binome_TEMPLATE.md` |
-| 2 | **5 arbitrages** (choix + 3 raisons dont ≥ 1 **chiffrée** + condition) | `arbitrages/0{1..5}_*.md` |
-| 3 | Conception (pile / pipeline / déploiement / monitoring / pseudo-code) | `conception/*.md` |
-| 4 | Schéma final + dossier 10 p (avec section **sécurité**) | `schema_archi_finale_TEMPLATE.md`, `dossier_conception_TEMPLATE.md` |
-| 5 | Slides + questions jury | `slides_TEMPLATE.md`, `questions_jury_TEMPLATE.md` |
+| 2 | **5 fiches d'arbitrage** (½ page max ; ≥ 1 raison **chiffrée** ; « non applicable » justifié accepté) | `arbitrages/0{1..5}_*.md` |
+| 3 | **Dossier de conception** (10 p **maximum**, pas une cible) — livrable principal (pile, pipeline, évaluation, déploiement, monitoring, pseudo-code, **sécurité** ; questions jury en annexe) | `dossier_conception_TEMPLATE.md` |
+| 4 | Schéma final (support de la restitution orale — pas de slides) | `schema_archi_finale_TEMPLATE.md` |
 
 ### ✅ Checklist livrables (avant vendredi 17h)
 
-- [ ] 5 arbitrages **tous tranchés** (3 raisons + condition de changement d'avis),
-      ≥ 1 raison **chiffrée sur votre volumétrie** (fiche chiffrage, pas recopiée)
+- [ ] 5 arbitrages **tranchés ou non applicables** (justifiés en 1 ligne) — pas de
+      GenAI forcée par la grille ; ≥ 1 raison **chiffrée sur votre volumétrie**
 - [ ] Archi **cohérente** avec les arbitrages (RAG non ⇒ pas de vector DB)
 - [ ] **Sobriété visible** : la section « ce qu'on n'a PAS mis », justifiée
 - [ ] **Sécurité** : les menaces du cadrage B1 ont une réponse d'architecture
-- [ ] Slides format certif (≤ 10, lisibles à 3 m) ; 5-10 questions jury **réalistes**
+- [ ] 5-10 questions jury **réalistes** en annexe du dossier ; restitution orale sur le schéma final, sans slides
 - [ ] Convergence tracée (négociation, pas union) ; **journal de bord** tenu
 
 ## ⭐ Extension (non notée, si socle bouclé) — la contradictoire croisée

@@ -2,7 +2,7 @@
 
 > Brief associé : M8-B2
 > Durée de lecture : ~15 min
-> Pré-requis : conception + slides
+> Pré-requis : dossier de conception + schéma final — les questions vont en **annexe du dossier**
 
 ## Pourquoi cette techno ?
 

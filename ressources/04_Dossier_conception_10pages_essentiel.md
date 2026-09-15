@@ -2,7 +2,7 @@
 
 > Brief associé : M8-B2
 > Durée de lecture : ~20 min
-> Pré-requis : 5 arbitrages + conception réalisés
+> Pré-requis : convergence binôme + 5 arbitrages (½ page chacun)
 
 ## Pourquoi cette techno ?
 
@@ -15,15 +15,18 @@ l'acquis du parcours (déploiement M5, monitoring M6, audit M7).
 ## Concepts clés
 
 - **Public = architecte** : on peut être technique, mais structuré et justifié.
-- **Structure** : synthèse / 5 arbitrages / pile / pipeline / déploiement /
-  monitoring / pseudo-code / schéma / conformité.
+- **Un seul livrable de conception** : pile, pipeline, évaluation, déploiement,
+  monitoring, pseudo-code et conformité s'écrivent **directement** dans le
+  dossier (sections 3-9) — pas de fichiers intermédiaires à recopier. Questions
+  jury en annexe.
 - **Références aux modules** : « CI/CD comme en M5 », « monitoring drift comme en
   M6 » — capitalisation explicite.
 - **Sobriété visible** : une section « ce qu'on n'a PAS mis » (vector DB, Registry,
   agents) avec la justification.
 - **Cohérence** : chaque choix d'archi découle d'un arbitrage (traçabilité).
-- **10 pages max** : synthétiser, ne pas tout détailler — le pseudo-code couvre le
-  critique, pas tout le code.
+- **10 pages = un plafond, pas une cible** : synthétiser, ne pas tout détailler —
+  le pseudo-code couvre le critique, pas tout le code. Un dossier de 6 pages
+  cohérent vaut mieux que 10 pages remplies pour remplir.
 
 ## Exemple minimal qui tourne
 
@@ -64,13 +67,13 @@ l'acquis du parcours (déploiement M5, monitoring M6, audit M7).
 
 ## Vérification (checklist apprenant)
 
-- [ ] 10 pages max, structuré.
+- [ ] 10 pages **au maximum** (pas une cible), structuré.
 - [ ] Lisible par un architecte (technique mais clair).
 - [ ] Références aux modules antérieurs (M5/M6/M7).
 - [ ] Section « ce qu'on n'a PAS mis » (sobriété).
 - [ ] Chaque brique d'archi découle d'un arbitrage.
 
-> 💡 **Récap — Dossier de conception** : public = **architecte** ; 10 pages structurées ; **référencer les modules** (CI/CD M5, monitoring M6) ; section « ce qu'on n'a PAS mis » (sobriété) ; chaque brique d'archi découle d'un arbitrage (traçabilité). Assez complet pour qu'un autre reprenne.
+> 💡 **Récap — Dossier de conception** : public = **architecte** ; **10 pages au maximum** (plafond, pas cible) ; **référencer les modules** (CI/CD M5, monitoring M6) ; section « ce qu'on n'a PAS mis » (sobriété) ; chaque brique d'archi découle d'un arbitrage (traçabilité). Assez complet pour qu'un autre reprenne.
 
 ### À retenir
 
