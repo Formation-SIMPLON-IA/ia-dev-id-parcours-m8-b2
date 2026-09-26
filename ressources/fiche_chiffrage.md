@@ -1,7 +1,7 @@
 # Fiche chiffrage — ordres de grandeur pour arbitrer
 
 > Brief associé : M8-B2 · Lecture ~10 min · Complète la
-> `cheatsheet_sobriete_couts.md` (repo `ia-atos-ressources`).
+> `cheatsheet_sobriete_couts.md` (repo `ia-dev-id-ressources`).
 > **Usage** : vos arbitrages exigent des raisons **chiffrées**. Voici des
 > ordres de grandeur défendables en 2026 — à ajuster à VOTRE volumétrie,
 > et à recalculer, pas à recopier. Un chiffre sans calcul = déclaratif.

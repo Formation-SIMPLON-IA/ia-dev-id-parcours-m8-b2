@@ -3,6 +3,7 @@
 > Brief associé : M8-B2
 > Durée de lecture : ~15 min
 > Pré-requis : architecture conçue
+> ⭐ **Optionnel** en M8-B2 : section bonus de la fiche de décision, à faire seulement si le reste est terminé.
 
 ## Pourquoi cette techno ?
 

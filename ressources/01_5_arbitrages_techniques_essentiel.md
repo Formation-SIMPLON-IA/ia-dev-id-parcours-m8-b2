@@ -14,8 +14,8 @@ recommander le plus **léger** qui résout le besoin.
 
 ## Concepts clés
 
-- **Chaque arbitrage = choix + 3 raisons + condition de changement d'avis**, en
-  **½ page max**. La condition montre qu'on a réfléchi aux limites, pas dogmatisé.
+- **Chaque arbitrage = choix + 2-3 raisons (≥ 1 chiffrée) + condition de
+  changement d'avis**, en **une ligne du tableau §2** de la fiche de décision. La condition montre qu'on a réfléchi aux limites, pas dogmatisé.
 - **« Non applicable » est une réponse valide** : les 5 questions sont une
   **grille de vérification**, pas une obligation d'introduire de la GenAI. Pour
   une reco sur historique d'achats ou une maintenance sur capteurs, « SLM vs
@@ -59,8 +59,8 @@ Condition qui ferait se poser la question : produire du texte pour l'utilisateur
 
 ## Exercice guidé
 
-Pour votre cas (binôme) :
-1. Rédigez les 5 arbitrages (choix + 3 raisons + condition, ou « non applicable » justifié).
+Pour votre cas (en groupe) :
+1. Remplissez le tableau §2 de la fiche (choix + 2-3 raisons + condition, ou « non applicable » justifié).
 2. Vérifiez la **cohérence** : votre archi reflète-t-elle vos choix ?
 3. Identifiez où la **sobriété** vous fait dire « non » — et assumez-le.
 
@@ -79,7 +79,7 @@ Pour votre cas (binôme) :
 |---|---|
 | Jury : « pourquoi pas plus simple ? » | sobriété non argumentée |
 | Archi contient des briques inutiles | arbitrages non reflétés |
-| Choix contestable | pas de 3 raisons solides |
+| Choix contestable | pas de raisons solides (aucune chiffrée) |
 
 ## Pour aller plus loin
 
@@ -89,12 +89,12 @@ Pour votre cas (binôme) :
 ## Vérification (checklist apprenant)
 
 - [ ] Les 5 arbitrages sont **tranchés** ou **non applicables** (justifié en 1 ligne).
-- [ ] Chaque arbitrage tranché : choix + 3 raisons + condition, ½ page max.
+- [ ] Chaque arbitrage tranché : choix + 2-3 raisons (≥ 1 chiffrée) + condition, une ligne du tableau §2.
 - [ ] L'archi est **cohérente** avec les arbitrages.
 - [ ] La sobriété est visible (« non » assumés et justifiés).
 - [ ] Les raisons sont chiffrées quand c'est possible.
 
-> 💡 **Récap — 5 arbitrages** : ML/DL · SLM/LLM · RAG · agents · zero-shot — chacun : choix + 3 raisons + **condition de changement d'avis** — ou **non applicable** justifié. Réflexe : « non » par défaut à LLM/RAG/agents sauf gain prouvé ; cohérence archi (RAG non ⇒ pas de vector DB) ; sobriété notée.
+> 💡 **Récap — 5 arbitrages** : ML/DL · SLM/LLM · RAG · agents · zero-shot — chacun : choix + 2-3 raisons + **condition de changement d'avis** — ou **non applicable** justifié. Réflexe : « non » par défaut à LLM/RAG/agents sauf gain prouvé ; cohérence archi (RAG non ⇒ pas de vector DB) ; sobriété notée.
 
 ### À retenir
 

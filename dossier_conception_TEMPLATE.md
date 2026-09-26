@@ -1,92 +1,97 @@
-# Dossier de conception — <votre cas> (À COMPLÉTER)
+# Fiche de décision — <votre cas> (À COMPLÉTER)
 
-**Client :** <nom, rôle> · **Binôme :** <prénoms> · **Cas <A/B/C/D>**
+**Client :** <nom, rôle> · **Groupe :** <prénoms> · **Cas <A/C/D>**
 
-> **Livrable principal — 10 pages au maximum, pas une cible** : un dossier court
-> et cohérent vaut mieux qu'un dossier rempli. Lisible par un architecte technique.
-> Renommez en `dossier_conception.md`. La conception s'écrit **ici, une seule
-> fois** : pas de fichiers intermédiaires à recopier. Le détail des 5
-> arbitrages vit dans `arbitrages/` (½ page chacun), le schéma dans
-> `schema_archi_finale.md`.
+> **Livrable principal — 3-4 pages au maximum** (un plafond, pas une cible).
+> Lisible par un architecte technique. Renommez en `dossier_conception.md`.
+> Tout s'écrit **ici, une seule fois** : décisions, arbitrages, schéma et
+> questions prévues. Tableaux plutôt que paragraphes.
 
 ---
 
-## 1. Synthèse (½ page)
+## 1. Décisions de groupe (mardi 15h30-16h45)
 
-<!-- Besoin, solution retenue, 2-3 chiffres clés, ce qu'on a écarté. -->
+> 3-5 points où vos cadrages M8-B1 divergeaient. Pas de compromis mou : un
+> choix tranché et argumenté.
 
-## 2. Les 5 arbitrages (1 tableau)
-
-| Arbitrage | Choix — ou « non applicable » | Raison clé (1 ligne, chiffrée si possible) |
-| --- | --- | --- |
-| ML vs DL |  |  |
-| SLM vs LLM |  |  |
-| RAG oui/non |  |  |
-| Agents oui/non |  |  |
-| Zero-shot suffit ? |  |  |
-
-## 3. Pile technique et sobriété (1-1,5 page)
-
-| Brique | Famille | Candidat(s) | Pourquoi celui-là |
+| Divergence | Positions (qui pensait quoi) | Décision retenue | Pourquoi |
 | --- | --- | --- | --- |
 |  |  |  |  |
 
-**Ce qu'on n'a PAS mis (obligatoire)** : <!-- brique écartée + raison -->
+## 2. Les 5 arbitrages
 
-**Coûts (ordres de grandeur, sur VOTRE volumétrie)** — `ressources/fiche_chiffrage.md`
+> Pour chacun : **choix + raisons (≥ 1 chiffrée) + condition de changement
+> d'avis** — ou « non applicable » en une ligne justifiée (+ ce qui ferait se
+> poser la question). Répondre « SLM » ou « RAG » sur un cas sans texte pour
+> remplir la grille est un signal de tropisme.
 
-## 4. Pipeline de données (1 page)
+| Arbitrage | Choix — ou « non applicable » | Raisons (≥ 1 chiffrée) | On changerait d'avis si… |
+| --- | --- | --- | --- |
+| ML classique vs deep learning |  |  |  |
+| SLM vs LLM |  |  |  |
+| RAG oui / non |  |  |  |
+| Agents oui / non |  |  |  |
+| Zero-shot suffit ? |  |  |  |
 
-<!-- Flux de la source à l'exploitation. Puis au minimum :
-     - modèle de stockage par type de donnée (relationnel / document / fichier / vectoriel) et pourquoi ;
-     - rétention : on garde quoi, combien de temps, on purge quoi (minimisation) ;
-     - chaud vs froid.
-     Appuis : grille de décision stockage + fiche cycle de vie (dépôt de ressources de la promo). -->
+## 3. Architecture finale et sobriété
 
-## 5. Évaluation (½-1 page)
+```mermaid
+flowchart LR
+    A[Source] --> B[Traitement] --> C[Modèle] --> D[Sortie / humain]
+```
+
+<!-- Chaque brique découle d'un arbitrage. Commentez en 3-4 lignes. -->
+
+**Ce qu'on n'a PAS mis (obligatoire)** : <!-- brique écartée + raison, ex. « pas de vector DB : RAG = non » -->
+
+## 4. Évaluation
 
 <!-- Comment on saura que ça marche AVANT la mise en service :
      baseline simple à battre, découpage des données (temporel si le temps compte),
      métriques alignées sur le KPI métier du cadrage. -->
 
-## 6. Déploiement (½-1 page)
+## 5. Déploiement et monitoring (héritage M5 / M6)
 
-<!-- Où et comment ça tourne, chaîne de livraison (héritage M5), rollback. -->
-
-## 7. Monitoring (½-1 page)
+<!-- Où et comment ça tourne, rollback. Puis : -->
 
 | Question | Métrique | Seuil | Alerte vers |
 | --- | --- | --- | --- |
 | En vie ? |  |  |  |
-| Rapide ? |  |  |  |
 | Prédit bien ? |  |  |  |
+| Données qui dérivent ? |  |  |  |
 
-<!-- Dérive (héritage M6). Ce qu'on ne monitore PAS, et pourquoi. -->
+<!-- Quand réentraîner, et qui décide. -->
 
-## 8. Pseudo-code du composant critique (½-1 page)
+## 6. Conformité et sécurité
 
-**Quel composant, et pourquoi lui** : <!-- … -->
+<!-- Qualification AI Act et base légale RGPD reprises des cadrages (raisonnement,
+     pas étiquette), en tenant compte de l'imprévu client de mardi 14h30.
+     Chaque menace de sécurité retenue → sa réponse d'architecture + le risque résiduel. -->
 
-```text
-fonction <nom>(<entrées>):
-    # 10-20 lignes lisibles par un non-développeur du binôme :
-    # cas nominal, cas limite (donnée manquante, confiance basse…),
-    # ce qui est journalisé.
-```
+## 7. Coûts (ordres de grandeur, sur VOTRE volumétrie)
 
-## 9. Conformité et sécurité (1 page)
+<!-- ressources/fiche_chiffrage.md — à recalculer, pas à recopier. -->
 
-<!-- Qualification AI Act et base légale RGPD reprises du cadrage (raisonnement,
-     pas étiquette). Chaque menace de sécurité retenue en B1 → sa réponse
-     d'architecture + le risque résiduel. -->
-
-## 10. Schéma final
-
-<!-- Renvoi vers schema_archi_finale.md — chaque brique découle d'un arbitrage. -->
+| Poste | Estimation | Hypothèse |
+| --- | --- | --- |
+|  |  |  |
 
 ---
 
-## Annexe — Questions jury prévues (5 à 10, hors pagination)
+## ⭐ Optionnel — Pseudo-code du composant critique
 
-1. _question probable_ → _réponse préparée (2-3 lignes)_
-2. _…_
+```text
+fonction <nom>(<entrées>):
+    # 10-20 lignes : cas nominal, cas limite (donnée manquante, confiance basse…),
+    # ce qui est journalisé.
+```
+
+## Annexe — 5 questions prévues (hors pagination)
+
+| # | Question probable | Réponse préparée (2-3 lignes) | Qui répond |
+| --- | --- | --- | --- |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |

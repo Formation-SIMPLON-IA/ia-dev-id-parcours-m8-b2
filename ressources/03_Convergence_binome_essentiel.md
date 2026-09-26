@@ -1,61 +1,71 @@
-# Converger en binôme (2 visions techniques) — Mini-cours
+# Converger en groupe (binôme ou trio, 2-3 visions techniques) — Mini-cours
 
 > Brief associé : M8-B2
 > Durée de lecture : ~15 min
-> Pré-requis : 2 cadrages M8-B1 (le tien + celui du coéquipier)
+> Pré-requis : les cadrages M8-B1 de chaque membre du groupe
+> *(nom de fichier historique « binome » : le mini-cours couvre binôme et trio)*
 
 ## Pourquoi cette techno ?
 
-Vous avez tiré le **même cas** en M8-B1, mais cadré **différemment**. En M8-B2, vous
-devez produire **une seule** conception. Converger n'est pas fusionner (coller les
-2 textes) ni s'aligner par fatigue : c'est **négocier** chaque divergence et
-**trancher** avec une raison. C'est une compétence pro réelle (CT9) — défendre,
-écouter, décider.
+Vous étiez 2 ou 3 sur le **même client** en M8-B1, mais vous avez cadré
+**différemment**. En M8-B2, vous devez produire **une seule** conception, en
+1 h 15 le mardi. Converger n'est pas fusionner (coller les textes) ni s'aligner
+par fatigue : c'est **négocier** chaque divergence et **trancher** avec une
+raison. C'est une compétence pro réelle (CT9) — défendre, écouter, décider.
 
 ## Concepts clés
 
-- **Convergence ≠ union** : on ne juxtapose pas les 2 cadrages, on choisit.
-- **Lister les divergences** : 3-5 points majeurs à trancher en priorité (modèle,
-  seuil, stockage…).
-- **Pour chaque divergence** : position A / position B / **décision retenue + raison**.
-- **Pas de compromis mou** : « on met les deux » est rarement la bonne réponse —
-  trancher avec un argument est mieux qu'un entre-deux flou.
-- **Tracer** : `decisions_binome.md` documente le processus (pas juste le résultat) —
-  c'est la preuve de la négociation.
-- **Désaccord sain** : challenger l'autre (« et si on faisait plus simple ? »)
-  améliore la conception.
+- **Convergence ≠ union** : on ne juxtapose pas les cadrages, on choisit.
+- **Lister les divergences** : 3-5 points majeurs à trancher en priorité (famille
+  de modèle, données à acquérir, KPI, qualification AI Act, lecture de l'imprévu
+  client…).
+- **Pour chaque divergence** : positions / **décision retenue + raison** → §1 de
+  la fiche de décision.
+- **Pas de compromis mou** : « on met les deux » est rarement la bonne réponse.
+- **Spécificité du trio** : à trois, la majorité 2 contre 1 est tentante — mais
+  un vote n'est pas un argument. Tranchez sur la **raison**, et donnez un rôle à
+  chacun (animateur du temps, scribe de la fiche, avocat de la sobriété qui
+  demande « et si on faisait plus simple ? »). Faites tourner les rôles le mercredi.
+- **Répartir sans découper** : chacun rédige des sections, mais tout le groupe
+  valide §1 et §2 ; sinon la fiche devient trois documents collés.
+- **Désaccord sain** : challenger l'autre améliore la conception.
 
 ## Exemple minimal qui tourne
 
 ```markdown
-| Divergence | Position A | Position B | Décision |
+| Divergence | Positions | Décision | Pourquoi |
 |---|---|---|---|
-| Seuil de revue | 0.5 | 0.7 | 0.6 (compromis argumenté : charge vs qualité) |
-| PII | suppression | pseudonymisation | pseudonymisation (garde le signal) |
+| Seuil de revue humaine | A : 0.5 · B : 0.7 · C : 0.7 | 0.6 | charge de revue < 20 % des tickets ET précision > 85 % |
+| Données personnelles | A : suppression · B : pseudonymisation | pseudonymisation | garde le signal utile au tri |
 ```
 
 ## Exercice guidé
 
-Avec ton binôme :
-1. Listez les 3-5 points où vos cadrages divergent.
-2. Pour chacun : argumentez, puis **tranchez** (pas « on verra »).
-3. Tracez position A / B / décision dans `decisions_binome.md`.
+En groupe, mardi 15h30 :
+1. 20 min : chacun lit les cadrages des autres, note ce qui diffère du sien.
+2. 15 min : mettez en commun et gardez les 3-5 divergences qui changent la conception.
+3. 40 min : pour chacune, chaque membre argumente (2 min max), puis **tranchez**
+   et remplissez §1.
+
+*Solution attendue* : un tableau §1 de 3-5 lignes, chaque décision justifiée
+par une raison (pas « on a voté »).
 
 ## Pièges fréquents
 
 | Piège | Conséquence |
 |---|---|
-| Coller les 2 cadrages | Conception incohérente |
+| Coller les cadrages | Conception incohérente |
 | Compromis mou (« les deux ») | Sur-engineering / indécision |
-| S'aligner par fatigue | Choix non argumenté |
-| Ne tracer que le résultat | Pas de preuve de négociation |
+| Trancher par vote 2 contre 1 sans argument | Choix non défendable à l'oral |
+| Un membre rédige tout | Les autres ne savent pas défendre la fiche |
 | Éviter le désaccord | On rate l'amélioration mutuelle |
 
 | Symptôme | Cause probable |
 |---|---|
-| Dossier contradictoire | union au lieu de convergence |
-| Archi qui « met tout » | compromis mou |
-| Restitution décousue | pas de décision commune claire |
+| Fiche contradictoire | Union au lieu de convergence |
+| Archi qui « met tout » | Compromis mou |
+| Un membre muet à la restitution | Rôles et sections non répartis |
+| Restitution décousue | Pas de décision commune claire en §1 |
 
 ## Pour aller plus loin
 
@@ -65,17 +75,15 @@ Avec ton binôme :
 ## Vérification (checklist apprenant)
 
 - [ ] On a listé 3-5 divergences majeures.
-- [ ] Chaque divergence est **tranchée** (pas « on verra »).
-- [ ] `decisions_binome.md` trace position A / B / décision.
+- [ ] Chaque divergence est **tranchée** avec une raison (pas « on verra », pas « on a voté »).
+- [ ] §1 de la fiche trace positions / décision / pourquoi.
 - [ ] Pas de compromis mou (« on met les deux »).
-- [ ] La conception finale est **cohérente** (une seule vision).
+- [ ] Chaque membre a un rôle et des sections, et peut défendre toute la fiche.
 
-> 💡 **Récap — Convergence binôme** : convergence ≠ union ≠ compromis mou : on **négocie** et on **tranche** chaque divergence avec une raison ; tracer position A / B / décision dans `decisions_binome.md`. Le désaccord sain (« et si plus simple ? ») améliore la conception.
+> 💡 **Récap — Convergence en groupe** : convergence ≠ union ≠ compromis mou ≠ vote : on **négocie** et on **tranche** chaque divergence avec une raison, tracée en §1. En trio, des rôles tournants (temps, scribe, avocat de la sobriété) évitent qu'un membre porte tout.
 
 ### À retenir
 
-- Le livrable se juge sur sa **clarté pour le destinataire**, pas sur sa longueur.
 - **Chiffrer** plutôt qu'affirmer : un nombre vaut mieux qu'un adjectif.
 - **Sobriété** : recommander le plus simple qui résout le besoin, et **dire ce qu'on écarte**.
-- Distinguer ce qu'on **sait** de ce qui reste **à clarifier** (questions ouvertes).
 - Tracer ses **choix** et leur **raison** — c'est ce qui se défend en restitution.
