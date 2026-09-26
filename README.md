@@ -16,7 +16,7 @@
 | **Mercredi 9h15-10h00** | **5 arbitrages** : choix + raisons (≥ 1 chiffrée) + condition de changement d'avis, ou « non applicable » justifié | §2 |
 | **Mercredi 10h00-11h00** | Architecture finale (Mermaid) + ce qu'on n'a pas mis, évaluation, déploiement & monitoring, conformité & sécurité, coûts | §3 à §7 |
 | **Mercredi 11h00-11h15** | 5 questions probables + réponses, répartition de la parole, **commit final 11h15** | Annexe |
-| **Mercredi 11h15-12h15** | **Restitution** : 20 min par groupe (12 min d'oral sur le schéma final + 8 min de questions). Pas de slides, **chaque membre parle** | — |
+| **Mercredi 11h15-11h55** | **Restitution** : 20 min par groupe (12 min d'oral sur le schéma final + 8 min de questions). Pas de slides, **chaque membre parle** | — |
 
 ## 🧭 Ce que vous produisez
 
